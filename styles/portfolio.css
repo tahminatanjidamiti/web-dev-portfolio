@@ -185,3 +185,101 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     margin-bottom: 24px;
     border: none;
 }
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+    
+    .banner{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+    nav > ul {
+        gap: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .skills-container,
+     .resume-container{
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about{
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .about-items,
+    nav, 
+    nav > ul {
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea{
+        width: calc(100% - 40px);
+    }
+    .section-description{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+/* tablet specific media query */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .banner{
+        flex-direction: column;
+        padding-right: 80px;
+    }
+    .btn-primary{
+        margin-right: 15px;
+    }
+    .banner-content,
+    .banner-profile-pic{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .about-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        gap: 30px;
+    }
+    .about{
+        margin-left: 25px;
+    }
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .resume{
+        padding-left: 10px;
+    }
+    footer{
+        flex-direction: column;
+        padding: 50px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea{
+        width: calc(100% - 100px);
+    }
+    
+    
+}
